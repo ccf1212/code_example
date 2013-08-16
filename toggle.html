@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+#article_1 {
+    display:none;
+}
+#article_2 {
+    display:none;
+}
+#article_3 {
+    display:none;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".toggle_link").click(function() {
+        toggle(this.id);
+    });
+    function toggle(i) {
+        $("#article_" + i).toggle();
+    }
+});
+</script>
+</head>
+<body>
+<div id='article_1'>
+第一篇：
+瓊斯盃／日162公分卡哇依控衛　町田瑠唯最欣賞朗多</br>
+ETtodayETtoday – 2013年8月16日 下午10:05</br>
+記者游郁香／苗栗報導</br>
+年僅20歲的日本控衛町田瑠唯，雖然身高只有162公分，打起球來卻相當沉穩，2年前她曾獲選U19世界青年錦標賽最佳五人、加入富士通職業女籃後，更一舉奪下新人王，這位備受期待的後場新星，留著一頭棕色短髮、長相十分甜美可愛，她最欣賞的球星正是身材也很「迷你」的綠衫軍主控朗多(Rajon Rondo)。</br></br></br></br>
+</div>
+<div id='article_2'>
+第二篇：
+新頭殼newtalk 2013.08.16 黃沛瑜/綜合報導</br>
+根據AllThingsD科技網站的報導，社群網站Facebook正著手測試類似PayPal的線上付費服務，並預計在下個月推出。該功能將讓行動應用程式使用者得以透過臉書的登入資料完成認證交易，企圖大幅簡化行動交易手續，從龐大的線上交易商機中尋求獲利的機會。</br></br></br></br>
+</div>
+<div id='article_3'>
+第三篇：
+澎湖沙灘嘉年華 明(17日)登場</br>
+旅遊經作者： 旅遊經編輯部／洪書瑱 | 旅遊經 – 2013年8月16日 上午8:03</br>
+相關內容</br>
+澎湖沙灘嘉年華 明(17日)登場看相片</br>
+澎湖沙灘嘉年華 明(17日)登場</br>
+2013澎湖沙灘嘉年華即將開幕，演唱會將於明(17)日下午7時30分於隘門沙灘開唱！當日該區域下午5時起，將實施交通安全管制，此次開幕活動特邀請到音樂詩人「陳昇」與「新寶島康樂隊」蒞澎登台演唱，藉由演唱音樂會炒熱澎湖沙灘，晚間9時30分將施放10分鐘炫麗煙火秀！</br></br></br></br>
+</div>
+<a id='1' class='toggle_link'>點我看第一篇</a></br>
+<a id='2' class='toggle_link'>點我看第二篇</a></br>
+<a id='3' class='toggle_link'>點我看第三篇</a></br>
+</body>
+</html>
