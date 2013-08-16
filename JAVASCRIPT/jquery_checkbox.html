@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#selectAll").click(function() {
+        $("[name='list[]']").each(function() {
+            this.checked = true;
+        });
+    });
+    $("#cancelAll").click(function() {
+        $("[name='list[]']").each(function() {
+            this.checked = false;
+        });
+    });
+});
+</script>
+</head>
+<body>
+<div>
+<p>Checkboc</p>
+<input name="list[]" type="checkbox" value="Apple"> Apple
+<input name="list[]" type="checkbox" value="Ball"> Ball
+<input name="list[]" type="checkbox" value="Cat"> Cat
+<input name="list[]" type="checkbox" value="Dog"> Dog
+<input name="list[]" type="checkbox" value="Egg"> Egg
+</div>
+<div>
+<p>Button</p>
+<input name="selectAll" id="selectAll" type="button" value="Select All">
+<input name="cancelAll" id="cancelAll" type="button" value="Cancel All">
+</div>
+</body>
+</html>
