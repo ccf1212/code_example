@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    var arr = {
+        'a': 'apple',
+        'b': 'boy',
+        'c': 'cat',
+    }
+    for (var key in arr) {
+        $("p").append("key: " + key + "</br>" + "value: " + arr[key] + "</br>");
+    }
+});
+</script>
+</head>
+<body>
+<div>
+<p>Text here</br></p>
+</div>
+</body>
+</html>
