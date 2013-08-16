@@ -1,0 +1,71 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    var count;
+    //selectOdd
+    $("#selectOdd").click(function() {
+        count = 0;
+        $("[name='list[]']").each(function() {
+            count++;
+            if (1 == count % 2) {
+                this.checked = true;
+            } else {
+                //continue
+                return true;
+            }
+        });
+    });
+    //selectEven
+    $("#selectEven").click(function() {
+        count = 0;
+        $("[name='list[]']").each(function() {
+            count++;
+            if (0 == count % 2) {
+                this.checked = true;
+            } else {
+                //continue
+                return true;
+            }
+        });
+    });
+    //cancelAll
+    $("#cancelAll").click(function() {
+        $("[name='list[]']").each(function() {
+                this.checked = false;
+        });
+    });
+    //select First
+    $("#selectFirst").click(function() {
+        count = 0;
+        $("[name='list[]']").each(function() {
+                count++;
+                if (2 == count) {
+                    //break
+                    return false;
+                }
+                this.checked = true;
+        });
+    });
+});
+</script>
+</head>
+<body>
+<div>
+<p>Checkboc</p>
+<input name="list[]" type="checkbox" value="Apple"> Apple
+<input name="list[]" type="checkbox" value="Ball"> Ball
+<input name="list[]" type="checkbox" value="Cat"> Cat
+<input name="list[]" type="checkbox" value="Dog"> Dog
+<input name="list[]" type="checkbox" value="Egg"> Egg
+</div>
+<div>
+<p>Button</p>
+<input name="selectOdd" id="selectOdd" type="button" value="Select Odd">
+<input name="selectEven" id="selectEven" type="button" value="Select Even">
+<input name="cancelAll" id="cancelAll" type="button" value="cancel All">
+<input name="selectFirst" id="selectFirst" type="button" value="select First">
+</div>
+</body>
+</html>
