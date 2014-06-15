@@ -1,5 +1,5 @@
 //Program Description
-//Name: heap_sort.java
+//Name: radix_sort.java
 //Author: Chris Yang
 //Language: Java
 import java.io.*;
