@@ -1,5 +1,7 @@
 code_example
 ============
-Here I will put some code example of my blog.
+code_example is a repository that I use to do some practice.
 
-My blog: <a href='http://chris800731.blogspot.tw/' target='_blank'>http://chris800731.blogspot.tw/</a>
+many algorithms are implemented here, just like sort and search.
+
+I also record the concepts and details about these algorithms at <a href = "140.117.169.131/wordpress" target="_blank">Chris Yang | 學習筆記</a>.
