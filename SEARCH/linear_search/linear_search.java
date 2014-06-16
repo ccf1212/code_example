@@ -1,5 +1,5 @@
 //Program Description
-//Name: linear_sort.java
+//Name: linear_search.java
 //Author: Chris Yang
 //Language: Java
 
